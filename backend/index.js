@@ -7,6 +7,7 @@ const morgan = require("morgan");
 
 dotenv.config();
 
+// database
 mongoose.connect(process.env.MONGO_URL, () => {
   console.log(`Connected to MongoDB at: ${process.env.MONGO_URL}`);
 });
@@ -15,6 +16,15 @@ mongoose.connect(process.env.MONGO_URL, () => {
 app.use(express.json());
 app.use(helmet());
 app.use(morgan("common"));
+
+// Routes
+app.get("/", (req, res) => {
+  res.send("Welcome to the HomePage");
+});
+
+app.get("/users", (req, res) => {
+  res.send("Welcome to the UserPage");
+});
 
 PORT = 8800;
 app.listen(PORT, () => {
