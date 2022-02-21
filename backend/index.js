@@ -1,10 +1,16 @@
+// libraries
 const express = require("express");
-const app = express();
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const helmet = require("helmet");
 const morgan = require("morgan");
+// Routes
+const userRoute = require("./routes/users");
 
+// initial Express App
+const app = express();
+
+// dotenv
 dotenv.config();
 
 // database
@@ -18,13 +24,7 @@ app.use(helmet());
 app.use(morgan("common"));
 
 // Routes
-app.get("/", (req, res) => {
-  res.send("Welcome to the HomePage");
-});
-
-app.get("/users", (req, res) => {
-  res.send("Welcome to the UserPage");
-});
+app.use("/api/user", userRoute);
 
 PORT = 8800;
 app.listen(PORT, () => {
