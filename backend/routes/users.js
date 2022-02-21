@@ -30,6 +30,18 @@ router.put("/:id", async (req, res) => {
 });
 
 // delete user
+router.delete("/:id", async (req, res) => {
+  if (req.body.userId === req.params.id || req.user.idAdmin) {
+    try {
+      const user = await User.deleteOne(req.params.id);
+      res.status(200).json("Account has been deleted");
+    } catch (error) {
+      return res.status(500).send(error);
+    }
+  } else {
+    return res.status(401).send("Unauthorized");
+  }
+});
 
 // get a user
 
