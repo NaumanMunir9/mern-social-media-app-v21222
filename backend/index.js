@@ -24,7 +24,7 @@ app.use(helmet());
 app.use(morgan("common"));
 
 // Routes
-app.use("/api/user", userRoute);
+app.use("/api/users", userRoute);
 
 PORT = 8800;
 app.listen(PORT, () => {
