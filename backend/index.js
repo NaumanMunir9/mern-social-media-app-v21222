@@ -7,6 +7,7 @@ const morgan = require("morgan");
 // Routes
 const userRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
+const postRoute = require("./routes/posts");
 
 // initial Express App
 const app = express();
@@ -27,6 +28,7 @@ app.use(morgan("common"));
 // Routes
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
+app.use("/api/posts", postRoute);
 
 PORT = 8800;
 app.listen(PORT, () => {
