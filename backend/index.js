@@ -7,8 +7,11 @@ const morgan = require("morgan");
 
 dotenv.config();
 
-PORT = 8800;
+mongoose.connect(process.env.MONGO_URL, () => {
+  console.log(`Connected to MongoDB at: ${process.env.MONGO_URL}`);
+});
 
+PORT = 8800;
 app.listen(PORT, () => {
   console.log(`Server is running on port: ${PORT}`);
 });
