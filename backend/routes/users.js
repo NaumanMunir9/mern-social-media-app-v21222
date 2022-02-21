@@ -6,7 +6,7 @@ const User = require("../models/user");
 
 // update user
 router.put("/:id", async (req, res) => {
-  if (req.body.userId === req.params.id || req.user.idAdmin) {
+  if (req.body.userId === req.params.id || req.body.idAdmin) {
     if (req.body.password) {
       try {
         const salt = await bcrypt.genSalt(10);
@@ -31,10 +31,10 @@ router.put("/:id", async (req, res) => {
 
 // delete user
 router.delete("/:id", async (req, res) => {
-  if (req.body.userId === req.params.id || req.user.idAdmin) {
+  if (req.body.userId === req.params.id || req.body.idAdmin) {
     try {
-      const user = await User.deleteOne(req.params.id);
-      res.status(200).json("Account has been deleted");
+      await User.findByIdAndDelete(req.params.id);
+      return res.status(200).json("Account has been deleted");
     } catch (error) {
       return res.status(500).send(error);
     }
