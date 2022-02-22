@@ -1,12 +1,18 @@
 // components
-import { Seo, Topbar } from "../components";
+import { Seo, Topbar, Sidebar, Feed, Rightbar } from "../components";
+// styles
+import styles from "../styles/Home.module.css";
 
 export default function HomePage() {
   return (
-    <div>
+    <>
       <Seo />
       <Topbar />
-      <h1>HomePage</h1>
-    </div>
+      <div className={styles.homeContainer}>
+        <Sidebar />
+        <Feed />
+        <Rightbar />
+      </div>
+    </>
   );
 }
