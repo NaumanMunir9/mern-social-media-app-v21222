@@ -79,6 +79,46 @@ export default function Sidebar() {
             />
             <span className={styles.sidebarFriendName}>John</span>
           </li>
+
+          <li className={styles.sidebarFriend}>
+            <Image
+              src="/person/2.jpeg"
+              width={32}
+              height={32}
+              className={styles.sidebarFriendImg}
+            />
+            <span className={styles.sidebarFriendName}>John</span>
+          </li>
+
+          <li className={styles.sidebarFriend}>
+            <Image
+              src="/person/2.jpeg"
+              width={32}
+              height={32}
+              className={styles.sidebarFriendImg}
+            />
+            <span className={styles.sidebarFriendName}>John</span>
+          </li>
+
+          <li className={styles.sidebarFriend}>
+            <Image
+              src="/person/2.jpeg"
+              width={32}
+              height={32}
+              className={styles.sidebarFriendImg}
+            />
+            <span className={styles.sidebarFriendName}>John</span>
+          </li>
+
+          <li className={styles.sidebarFriend}>
+            <Image
+              src="/person/2.jpeg"
+              width={32}
+              height={32}
+              className={styles.sidebarFriendImg}
+            />
+            <span className={styles.sidebarFriendName}>John</span>
+          </li>
         </ul>
       </div>
     </div>
