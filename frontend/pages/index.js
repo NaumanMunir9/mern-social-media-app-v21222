@@ -1,11 +1,12 @@
-// libraries
-import PersonIcon from "@mui/icons-material/Person";
+// components
+import { Seo, Topbar } from "../components";
 
 export default function HomePage() {
   return (
     <div>
+      <Seo />
       <h1>HomePage</h1>
-      <PersonIcon />
+      <Topbar />
     </div>
   );
 }
