@@ -5,8 +5,8 @@ export default function HomePage() {
   return (
     <div>
       <Seo />
-      <h1>HomePage</h1>
       <Topbar />
+      <h1>HomePage</h1>
     </div>
   );
 }
