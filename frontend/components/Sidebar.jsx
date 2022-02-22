@@ -10,6 +10,7 @@ import {
   Event,
   School,
 } from "@mui/icons-material";
+import Image from "next/image";
 // styles
 import styles from "../styles/Sidebar.module.css";
 
@@ -61,6 +62,22 @@ export default function Sidebar() {
           <li className={styles.sidebarListItem}>
             <School className={styles.sidebarIcon} />
             <span className={styles.sidebarListItemText}>Courses</span>
+          </li>
+        </ul>
+
+        <button className={styles.sidebarButton}>Show More</button>
+
+        <hr className={styles.sidebarHr} />
+
+        <ul className={styles.sidebarFriendList}>
+          <li className={styles.sidebarFriend}>
+            <Image
+              src="/person/2.jpeg"
+              width={32}
+              height={32}
+              className={styles.sidebarFriendImg}
+            />
+            <span className={styles.sidebarFriendName}>John</span>
           </li>
         </ul>
       </div>
