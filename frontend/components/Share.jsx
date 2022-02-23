@@ -1,6 +1,6 @@
 // libraries
 import Image from "next/image";
-import { PermMedia } from "@mui/icons-material";
+import { PermMedia, Room, EmojiEmotions, Label } from "@mui/icons-material";
 // styles
 import styles from "../styles/Share.module.css";
 
@@ -12,8 +12,8 @@ export default function Share() {
           <Image
             src="/person/1.jpeg"
             className={styles.shareProfileImg}
-            width={34}
-            height={34}
+            width={50}
+            height={50}
           />
           <input
             type="text"
@@ -27,8 +27,26 @@ export default function Share() {
         <div className={styles.shareBottom}>
           <div className={styles.shareOptions}>
             <div className={styles.shareOption}>
-              <PermMedia className={styles.shareIcon} />
+              <PermMedia htmlColor="tomato" className={styles.shareIcon} />
               <span className={styles.shareOptionText}>Photo/Video</span>
+            </div>
+
+            <div className={styles.shareOption}>
+              <Label htmlColor="blue" className={styles.shareIcon} />
+              <span className={styles.shareOptionText}>Tag</span>
+            </div>
+
+            <div className={styles.shareOption}>
+              <Room htmlColor="green" className={styles.shareIcon} />
+              <span className={styles.shareOptionText}>Location</span>
+            </div>
+
+            <div className={styles.shareOption}>
+              <EmojiEmotions
+                htmlColor="goldenrod"
+                className={styles.shareIcon}
+              />
+              <span className={styles.shareOptionText}>Feelings</span>
             </div>
           </div>
         </div>
