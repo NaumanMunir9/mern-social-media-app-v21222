@@ -2,3 +2,7 @@
   flex: 5.5;
   background: rgba(0, 0, 255, 0.2);
 }
+
+.feedWrapper {
+  padding: 20px;
+}

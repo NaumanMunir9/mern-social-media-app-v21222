@@ -13,8 +13,8 @@ export default function Post() {
             <Image
               className={styled.postProfileImg}
               src="/person/1.jpeg"
-              width={40}
-              height={40}
+              width={32}
+              height={32}
             />
             <span className={styled.postUserName}>Nauman Munir</span>
             <span className={styled.postDate}>5 mins ago</span>
