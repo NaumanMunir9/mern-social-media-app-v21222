@@ -49,6 +49,8 @@ export default function Share() {
               <span className={styles.shareOptionText}>Feelings</span>
             </div>
           </div>
+
+          <button className={styles.shareButton}>Share</button>
         </div>
       </div>
     </div>
