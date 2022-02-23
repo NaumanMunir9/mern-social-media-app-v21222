@@ -1,5 +1,6 @@
 // libraries
 import Image from "next/image";
+import { PermMedia } from "@mui/icons-material";
 // styles
 import styles from "../styles/Share.module.css";
 
@@ -23,7 +24,14 @@ export default function Share() {
 
         <hr className={styles.shareHr} />
 
-        <div className={styles.shareBottom}></div>
+        <div className={styles.shareBottom}>
+          <div className={styles.shareOptions}>
+            <div className={styles.shareOption}>
+              <PermMedia className={styles.shareIcon} />
+              <span className={styles.shareOptionText}>Photo/Video</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
