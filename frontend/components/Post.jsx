@@ -2,8 +2,6 @@
 import Image from "next/image";
 import { MoreVert } from "@mui/icons-material";
 // pictures
-import postProfileImg from "../public/person/1.jpeg";
-import firstPost from "../public/post/1.jpeg";
 import likePost from "../public/like.png";
 import heartPost from "../public/heart.png";
 // styles
@@ -19,7 +17,7 @@ export default function Post() {
               className={styles.postProfileImg}
               width={32}
               height={32}
-              src={postProfileImg}
+              src="https://avatars.githubusercontent.com/u/41162751?v=4"
             />
             <span className={styles.postUserName}>Nauman Munir</span>
             <span className={styles.postDate}>5 mins ago</span>
@@ -31,7 +29,12 @@ export default function Post() {
 
         <div className={styles.postCenter}>
           <span className={styles.postText}>Hey! It's my first post</span>
-          <Image className={styles.postImg} src={firstPost} />
+          <Image
+            className={styles.postImg}
+            src="https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            width={2000}
+            height={2000}
+          />
         </div>
 
         <div className={styles.postBottom}>

@@ -1,8 +1,5 @@
 // libraries
 import Image from "next/image";
-// pics
-import birthdayPic from "../public/gift.png";
-import adPic from "../public/ad.png";
 // styles
 import styles from "../styles/Rightbar.module.css";
 
@@ -12,7 +9,7 @@ export default function Rightbar() {
       <div className={styles.rightbarWrapper}>
         <div className={styles.birthdayContainer}>
           <Image
-            src={birthdayPic}
+            src="https://images.unsplash.com/photo-1578922864601-79dcc7cbcea9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
             width={40}
             height={40}
             className={styles.birthdayImg}
@@ -24,7 +21,7 @@ export default function Rightbar() {
         </div>
 
         <Image
-          src={adPic}
+          src="https://images.unsplash.com/photo-1645640932680-8967074c34b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
           width={500}
           height={350}
           className={styles.rightbarAd}

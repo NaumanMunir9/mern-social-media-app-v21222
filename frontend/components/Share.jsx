@@ -10,7 +10,7 @@ export default function Share() {
       <div className={styles.shareWrapper}>
         <div className={styles.shareTop}>
           <Image
-            src="/person/1.jpeg"
+            src="https://avatars.githubusercontent.com/u/41162751?v=4"
             className={styles.shareProfileImg}
             width={50}
             height={50}

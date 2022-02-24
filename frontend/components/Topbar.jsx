@@ -42,7 +42,7 @@ export default function Topbar() {
         </div>
 
         <Image
-          src="/person/1.jpeg"
+          src="https://avatars.githubusercontent.com/u/41162751?v=4"
           width={32}
           height={32}
           className={styles.topbarImg}
