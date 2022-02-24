@@ -85,3 +85,16 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* set up the body */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
