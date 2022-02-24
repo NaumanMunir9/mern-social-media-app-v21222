@@ -10,7 +10,7 @@ export default function Rightbar() {
     <div className={styles.rightbarContainer}>
       <div className={styles.rightbarWrapper}>
         <div className={styles.birthdayContainer}>
-          <Image src={birthdayPic} width={100} height={100} />
+          <Image src={birthdayPic} width={40} height={40} />
           <span className="birthdayText">
             <em>Muhammad</em> and <em>2 other friends</em> are celebrating their
             birthday!
