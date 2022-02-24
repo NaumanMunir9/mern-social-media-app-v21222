@@ -36,3 +36,50 @@
   font-size: 12px;
   color: #8e8e8e;
 }
+
+.postText {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 50px;
+}
+
+.postCenter {
+  margin: 20px 0;
+}
+
+.postImg {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.postBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.postBottomLeft {
+  display: flex;
+  align-items: center;
+}
+
+.likeIcon {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.postLikeCounter {
+  font-size: 15px;
+  font-weight: 500;
+  color: #8e8e8e;
+}
+
+.postCommentText {
+  font-size: 15px;
+  font-weight: 500;
+  color: #8e8e8e;
+  cursor: pointer;
+}
