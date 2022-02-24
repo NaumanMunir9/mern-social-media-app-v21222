@@ -40,13 +40,13 @@ export default function Post() {
         <div className={styles.postBottom}>
           <div className={styles.postBottomLeft}>
             <Image
-              src={likePost}
+              src="https://cdn-icons.flaticon.com/png/128/3670/premium/3670153.png?token=exp=1645724373~hmac=491d11e4d07e21ac061a290d0591ac7d"
               width={24}
               height={24}
               className={styles.likeIcon}
             />
             <Image
-              src={heartPost}
+              src="https://cdn-icons-png.flaticon.com/128/3237/3237429.png"
               width={24}
               height={24}
               className={styles.likeIcon}
