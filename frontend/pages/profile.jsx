@@ -41,7 +41,7 @@ export default function ProfilePage() {
 
           <div className={styles.profileRightBottom}>
             <Feed />
-            <Rightbar />
+            <Rightbar profile />
           </div>
         </div>
       </div>
