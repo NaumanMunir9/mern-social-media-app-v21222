@@ -7,6 +7,7 @@ const nextConfig = {
       "avatars.githubusercontent.com",
       "cdn-icons.flaticon.com",
       "cdn-icons-png.flaticon.com",
+      "randomuser.me",
     ],
   },
 };
