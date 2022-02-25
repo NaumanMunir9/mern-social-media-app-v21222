@@ -40,6 +40,7 @@ export default function Rightbar() {
               />
               <span className={styles.rightbarOnline}></span>
             </div>
+            <span className={styles.rightbarUsername}>Nauman Munir</span>
           </li>
         </ul>
       </div>
