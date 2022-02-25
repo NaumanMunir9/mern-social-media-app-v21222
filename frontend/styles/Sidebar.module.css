@@ -3,6 +3,8 @@
   background: rgba(0, 255, 0, 0.2);
   height: calc(100vh - 50px);
   overflow-y: auto;
+  position: sticky;
+  top: 50px;
 }
 
 .sidebar::-webkit-scrollbar {
