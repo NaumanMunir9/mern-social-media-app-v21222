@@ -1,4 +1,5 @@
 // libraries
+import { useState } from "react";
 import Image from "next/image";
 import { MoreVert } from "@mui/icons-material";
 // dummyData
@@ -8,6 +9,14 @@ import styles from "../styles/Post.module.css";
 
 export default function Post({ post }) {
   const user = Users.filter((user) => user.id === post.userId)[0];
+
+  const [like, setLike] = useState(post.like);
+  const [isLiked, setIsLiked] = useState(false);
+
+  const likeHandler = () => {
+    setLike(isLiked ? like - 1 : like + 1);
+    setIsLiked(!isLiked);
+  };
 
   return (
     <div className={styles.postContainer}>
@@ -46,6 +55,7 @@ export default function Post({ post }) {
                 width={24}
                 height={24}
                 className={styles.likeIcon}
+                onClick={likeHandler}
               />
             </div>
             <div className={styles.postLoveIcon}>
@@ -54,10 +64,11 @@ export default function Post({ post }) {
                 width={24}
                 height={24}
                 className={styles.heartIcon}
+                onClick={likeHandler}
               />
             </div>
             <span className={styles.postLikeCounter}>
-              {post.like} people like it
+              {like} people like it
             </span>
           </div>
           <div className={styles.postBottomRight}>
