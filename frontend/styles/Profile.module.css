@@ -1,0 +1,12 @@
+.profileContainer {
+  display: flex;
+  width: 100%;
+}
+
+.profileRight {
+  flex: 9;
+}
+
+.profileRightBottom {
+  display: flex;
+}
