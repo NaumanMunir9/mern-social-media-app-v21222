@@ -26,6 +26,22 @@ export default function Rightbar() {
           height={350}
           className={styles.rightbarAd}
         />
+
+        <h4 className={styles.rightbarTitle}>Online Friends</h4>
+
+        <ul className={styles.rightbarFriendsList}>
+          <li className={styles.rightbarFriend}>
+            <div className={styles.rightbarProfileImgContainer}>
+              <Image
+                src="https://avatars.githubusercontent.com/u/41162751?v=4"
+                width={40}
+                height={40}
+                className={styles.rightbarProfileImg}
+              />
+              <span className={styles.rightbarOnline}></span>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   );
