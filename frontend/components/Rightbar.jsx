@@ -27,22 +27,89 @@ export default function Rightbar() {
           className={styles.rightbarAd}
         />
 
-        <h4 className={styles.rightbarTitle}>Online Friends</h4>
+        <div className={styles.rightbarOnlineFriends}>
+          <h4 className={styles.rightbarTitle}>Online Friends</h4>
 
-        <ul className={styles.rightbarFriendsList}>
-          <li className={styles.rightbarFriend}>
-            <div className={styles.rightbarProfileImgContainer}>
-              <Image
-                src="https://avatars.githubusercontent.com/u/41162751?v=4"
-                width={40}
-                height={40}
-                className={styles.rightbarProfileImg}
-              />
-              <span className={styles.rightbarOnline}></span>
-            </div>
-            <span className={styles.rightbarUsername}>Nauman Munir</span>
-          </li>
-        </ul>
+          <ul className={styles.rightbarFriendsList}>
+            <li className={styles.rightbarFriend}>
+              <div className={styles.rightbarProfileImgContainer}>
+                <Image
+                  src="https://avatars.githubusercontent.com/u/41162751?v=4"
+                  width={40}
+                  height={40}
+                  className={styles.rightbarProfileImg}
+                />
+                <span className={styles.rightbarOnline}></span>
+              </div>
+              <span className={styles.rightbarUsername}>Nauman Munir</span>
+            </li>
+
+            <li className={styles.rightbarFriend}>
+              <div className={styles.rightbarProfileImgContainer}>
+                <Image
+                  src="https://avatars.githubusercontent.com/u/41162751?v=4"
+                  width={40}
+                  height={40}
+                  className={styles.rightbarProfileImg}
+                />
+                <span className={styles.rightbarOnline}></span>
+              </div>
+              <span className={styles.rightbarUsername}>Nauman Munir</span>
+            </li>
+
+            <li className={styles.rightbarFriend}>
+              <div className={styles.rightbarProfileImgContainer}>
+                <Image
+                  src="https://avatars.githubusercontent.com/u/41162751?v=4"
+                  width={40}
+                  height={40}
+                  className={styles.rightbarProfileImg}
+                />
+                <span className={styles.rightbarOnline}></span>
+              </div>
+              <span className={styles.rightbarUsername}>Nauman Munir</span>
+            </li>
+
+            <li className={styles.rightbarFriend}>
+              <div className={styles.rightbarProfileImgContainer}>
+                <Image
+                  src="https://avatars.githubusercontent.com/u/41162751?v=4"
+                  width={40}
+                  height={40}
+                  className={styles.rightbarProfileImg}
+                />
+                <span className={styles.rightbarOnline}></span>
+              </div>
+              <span className={styles.rightbarUsername}>Nauman Munir</span>
+            </li>
+
+            <li className={styles.rightbarFriend}>
+              <div className={styles.rightbarProfileImgContainer}>
+                <Image
+                  src="https://avatars.githubusercontent.com/u/41162751?v=4"
+                  width={40}
+                  height={40}
+                  className={styles.rightbarProfileImg}
+                />
+                <span className={styles.rightbarOnline}></span>
+              </div>
+              <span className={styles.rightbarUsername}>Nauman Munir</span>
+            </li>
+
+            <li className={styles.rightbarFriend}>
+              <div className={styles.rightbarProfileImgContainer}>
+                <Image
+                  src="https://avatars.githubusercontent.com/u/41162751?v=4"
+                  width={40}
+                  height={40}
+                  className={styles.rightbarProfileImg}
+                />
+                <span className={styles.rightbarOnline}></span>
+              </div>
+              <span className={styles.rightbarUsername}>Nauman Munir</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
