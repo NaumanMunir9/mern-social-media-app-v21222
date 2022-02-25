@@ -40,18 +40,22 @@ export default function Post({ post }) {
 
         <div className={styles.postBottom}>
           <div className={styles.postBottomLeft}>
-            <Image
-              src="https://cdn-icons-png.flaticon.com/128/889/889140.png"
-              width={24}
-              height={24}
-              className={styles.likeIcon}
-            />
-            <Image
-              src="https://cdn-icons-png.flaticon.com/128/2107/2107845.png"
-              width={24}
-              height={24}
-              className={styles.likeIcon}
-            />
+            <div className={styles.postLikeIcon}>
+              <Image
+                src="https://cdn-icons-png.flaticon.com/128/889/889140.png"
+                width={24}
+                height={24}
+                className={styles.likeIcon}
+              />
+            </div>
+            <div className={styles.postLoveIcon}>
+              <Image
+                src="https://cdn-icons-png.flaticon.com/128/2107/2107845.png"
+                width={24}
+                height={24}
+                className={styles.heartIcon}
+              />
+            </div>
             <span className={styles.postLikeCounter}>
               {post.like} people like it
             </span>
