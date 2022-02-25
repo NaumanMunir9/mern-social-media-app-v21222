@@ -1,13 +1,14 @@
 // libraries
 import Image from "next/image";
 import { MoreVert } from "@mui/icons-material";
-// pictures
-import likePost from "../public/like.png";
-import heartPost from "../public/heart.png";
+// dummyData
+import { Users } from "../dummyData";
 // styles
 import styles from "../styles/Post.module.css";
 
-export default function Post() {
+export default function Post({ post }) {
+  const user = Users.filter((user) => user.id === post.userId)[0];
+
   return (
     <div className={styles.postContainer}>
       <div className={styles.postWrapper}>
@@ -17,10 +18,10 @@ export default function Post() {
               className={styles.postProfileImg}
               width={32}
               height={32}
-              src="https://avatars.githubusercontent.com/u/41162751?v=4"
+              src={user.profileImg}
             />
-            <span className={styles.postUserName}>Nauman Munir</span>
-            <span className={styles.postDate}>5 mins ago</span>
+            <span className={styles.postUserName}>{user.username}</span>
+            <span className={styles.postDate}>{post.date}</span>
           </div>
           <div className={styles.postTopRight}>
             <MoreVert />
@@ -28,10 +29,10 @@ export default function Post() {
         </div>
 
         <div className={styles.postCenter}>
-          <span className={styles.postText}>Hey! It's my first post</span>
+          <span className={styles.postText}>{post?.desc}</span>
           <Image
             className={styles.postImg}
-            src="https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            src={post.photo}
             width={2000}
             height={2000}
           />
@@ -40,21 +41,25 @@ export default function Post() {
         <div className={styles.postBottom}>
           <div className={styles.postBottomLeft}>
             <Image
-              src="https://cdn-icons.flaticon.com/png/128/3670/premium/3670153.png?token=exp=1645724373~hmac=491d11e4d07e21ac061a290d0591ac7d"
+              src="https://cdn-icons-png.flaticon.com/128/889/889140.png"
               width={24}
               height={24}
               className={styles.likeIcon}
             />
             <Image
-              src="https://cdn-icons-png.flaticon.com/128/3237/3237429.png"
+              src="https://cdn-icons-png.flaticon.com/128/2107/2107845.png"
               width={24}
               height={24}
               className={styles.likeIcon}
             />
-            <span className={styles.postLikeCounter}>15 people like it</span>
+            <span className={styles.postLikeCounter}>
+              {post.like} people like it
+            </span>
           </div>
           <div className={styles.postBottomRight}>
-            <span className={styles.postCommentText}>6 comments</span>
+            <span className={styles.postCommentText}>
+              {post.comment} comments
+            </span>
           </div>
         </div>
       </div>
