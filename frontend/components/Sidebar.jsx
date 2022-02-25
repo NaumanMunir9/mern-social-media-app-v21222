@@ -10,7 +10,10 @@ import {
   Event,
   School,
 } from "@mui/icons-material";
-import Image from "next/image";
+// components
+import CloseFriends from "./CloseFriends";
+// dummy data
+import { Users } from "../dummyData";
 // styles
 import styles from "../styles/Sidebar.module.css";
 
@@ -70,55 +73,9 @@ export default function Sidebar() {
         <hr className={styles.sidebarHr} />
 
         <ul className={styles.sidebarFriendList}>
-          <li className={styles.sidebarFriend}>
-            <Image
-              src="/person/2.jpeg"
-              width={32}
-              height={32}
-              className={styles.sidebarFriendImg}
-            />
-            <span className={styles.sidebarFriendName}>John</span>
-          </li>
-
-          <li className={styles.sidebarFriend}>
-            <Image
-              src="/person/2.jpeg"
-              width={32}
-              height={32}
-              className={styles.sidebarFriendImg}
-            />
-            <span className={styles.sidebarFriendName}>John</span>
-          </li>
-
-          <li className={styles.sidebarFriend}>
-            <Image
-              src="/person/2.jpeg"
-              width={32}
-              height={32}
-              className={styles.sidebarFriendImg}
-            />
-            <span className={styles.sidebarFriendName}>John</span>
-          </li>
-
-          <li className={styles.sidebarFriend}>
-            <Image
-              src="/person/2.jpeg"
-              width={32}
-              height={32}
-              className={styles.sidebarFriendImg}
-            />
-            <span className={styles.sidebarFriendName}>John</span>
-          </li>
-
-          <li className={styles.sidebarFriend}>
-            <Image
-              src="/person/2.jpeg"
-              width={32}
-              height={32}
-              className={styles.sidebarFriendImg}
-            />
-            <span className={styles.sidebarFriendName}>John</span>
-          </li>
+          {Users.map((user, index) => (
+            <CloseFriends key={index} user={user} />
+          ))}
         </ul>
       </div>
     </div>
