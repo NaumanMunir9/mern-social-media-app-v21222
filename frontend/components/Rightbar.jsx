@@ -1,10 +1,11 @@
 // libraries
 import Image from "next/image";
+// components
+import Online from "./Online";
 // dummy data
 import { Users } from "../dummyData";
 // styles
 import styles from "../styles/Rightbar.module.css";
-import Online from "./Online";
 
 export default function Rightbar({ profile }) {
   const HomeRightbar = () => {
@@ -70,8 +71,8 @@ export default function Rightbar({ profile }) {
           <div className="rightbarFollowing">
             <Image
               src="https://avatars.githubusercontent.com/u/41162751?v=4"
-              width={40}
-              height={40}
+              width={100}
+              height={100}
               className={styles.rightbarFollowingImg}
             />
             <span className={styles.rightbarFollowingName}>Muhammad</span>
@@ -80,8 +81,8 @@ export default function Rightbar({ profile }) {
           <div className="rightbarFollowing">
             <Image
               src="https://avatars.githubusercontent.com/u/41162751?v=4"
-              width={40}
-              height={40}
+              width={100}
+              height={100}
               className={styles.rightbarFollowingImg}
             />
             <span className={styles.rightbarFollowingName}>Muhammad</span>
@@ -90,8 +91,8 @@ export default function Rightbar({ profile }) {
           <div className="rightbarFollowing">
             <Image
               src="https://avatars.githubusercontent.com/u/41162751?v=4"
-              width={40}
-              height={40}
+              width={100}
+              height={100}
               className={styles.rightbarFollowingImg}
             />
             <span className={styles.rightbarFollowingName}>Muhammad</span>
@@ -100,8 +101,8 @@ export default function Rightbar({ profile }) {
           <div className="rightbarFollowing">
             <Image
               src="https://avatars.githubusercontent.com/u/41162751?v=4"
-              width={40}
-              height={40}
+              width={100}
+              height={100}
               className={styles.rightbarFollowingImg}
             />
             <span className={styles.rightbarFollowingName}>Muhammad</span>
@@ -110,8 +111,8 @@ export default function Rightbar({ profile }) {
           <div className="rightbarFollowing">
             <Image
               src="https://avatars.githubusercontent.com/u/41162751?v=4"
-              width={40}
-              height={40}
+              width={100}
+              height={100}
               className={styles.rightbarFollowingImg}
             />
             <span className={styles.rightbarFollowingName}>Muhammad</span>
@@ -120,8 +121,8 @@ export default function Rightbar({ profile }) {
           <div className="rightbarFollowing">
             <Image
               src="https://avatars.githubusercontent.com/u/41162751?v=4"
-              width={40}
-              height={40}
+              width={100}
+              height={100}
               className={styles.rightbarFollowingImg}
             />
             <span className={styles.rightbarFollowingName}>Muhammad</span>
