@@ -48,7 +48,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* margin-top: 40px; */
 }
 
 .profileInfoName {
@@ -56,7 +55,8 @@
 }
 
 .profileInfoDesc {
-  font-weight: 300;
+  font-weight: 500;
+  margin-bottom: 15px;
 }
 
 .profileRightBottom {
