@@ -33,7 +33,7 @@ export default function ProfilePage() {
 
             <div className={styles.profileInfo}>
               <h4 className={styles.profileInfoName}>MNM</h4>
-              <span className={styles.profileDesc}>
+              <span className={styles.profileInfoDesc}>
                 Full Stack Software Developer and Blockchain Engineer
               </span>
             </div>
