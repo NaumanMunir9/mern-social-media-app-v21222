@@ -67,8 +67,8 @@ export default function Rightbar({ profile }) {
         </div>
 
         <h4 className={styles.rightbarTitle}>Users Friends</h4>
-        <div className="rightbarFollowings">
-          <div className="rightbarFollowing">
+        <div className={styles.rightbarFollowings}>
+          <div className={styles.rightbarFollowing}>
             <Image
               src="https://avatars.githubusercontent.com/u/41162751?v=4"
               width={100}
@@ -78,7 +78,7 @@ export default function Rightbar({ profile }) {
             <span className={styles.rightbarFollowingName}>Muhammad</span>
           </div>
 
-          <div className="rightbarFollowing">
+          <div className={styles.rightbarFollowing}>
             <Image
               src="https://avatars.githubusercontent.com/u/41162751?v=4"
               width={100}
@@ -88,7 +88,7 @@ export default function Rightbar({ profile }) {
             <span className={styles.rightbarFollowingName}>Muhammad</span>
           </div>
 
-          <div className="rightbarFollowing">
+          <div className={styles.rightbarFollowing}>
             <Image
               src="https://avatars.githubusercontent.com/u/41162751?v=4"
               width={100}
@@ -98,7 +98,7 @@ export default function Rightbar({ profile }) {
             <span className={styles.rightbarFollowingName}>Muhammad</span>
           </div>
 
-          <div className="rightbarFollowing">
+          <div className={styles.rightbarFollowing}>
             <Image
               src="https://avatars.githubusercontent.com/u/41162751?v=4"
               width={100}
@@ -108,7 +108,7 @@ export default function Rightbar({ profile }) {
             <span className={styles.rightbarFollowingName}>Muhammad</span>
           </div>
 
-          <div className="rightbarFollowing">
+          <div className={styles.rightbarFollowing}>
             <Image
               src="https://avatars.githubusercontent.com/u/41162751?v=4"
               width={100}
@@ -118,7 +118,7 @@ export default function Rightbar({ profile }) {
             <span className={styles.rightbarFollowingName}>Muhammad</span>
           </div>
 
-          <div className="rightbarFollowing">
+          <div className={styles.rightbarFollowing}>
             <Image
               src="https://avatars.githubusercontent.com/u/41162751?v=4"
               width={100}
