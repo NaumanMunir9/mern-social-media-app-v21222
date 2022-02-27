@@ -17,7 +17,15 @@ export default function login() {
             </span>
           </div>
           <div className={styles.loginRight}>
-            <div className={styles.loginBox}>Login box</div>
+            <div className={styles.loginBox}>
+              <input placeholder="Email" className={styles.loginInput} />
+              <input placeholder="password" className={styles.loginInput} />
+              <button className={styles.loginButton}>Login</button>
+              <span className={styles.loginPassword}>Forgot Password?</span>
+              <button className={styles.loginRegisterButton}>
+                Create a New Account
+              </button>
+            </div>
           </div>
         </div>
       </div>
