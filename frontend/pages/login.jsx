@@ -11,7 +11,9 @@ export default function login() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </span>
         </div>
-        <div className={styles.loginRight}></div>
+        <div className={styles.loginRight}>
+          <div className={styles.loginBox}>Login box</div>
+        </div>
       </div>
     </div>
   );
