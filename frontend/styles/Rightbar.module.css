@@ -74,3 +74,22 @@
 .rightbarUsername {
   font-weight: 500;
 }
+
+.rightbarTitle {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.rightbarInfo {
+  margin-bottom: 30px;
+}
+
+.rightbarInfoItem {
+  margin-bottom: 10px;
+}
+
+.rightbarFollowingImg {
+  border-radius: 5px;
+  object-fit: cover;
+}
