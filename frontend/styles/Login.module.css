@@ -39,4 +39,14 @@
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.loginInput {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  padding: 0 10px;
+  margin-bottom: 10px;
 }
