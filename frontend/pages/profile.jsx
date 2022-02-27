@@ -1,5 +1,6 @@
-// components
+// libraries
 import Image from "next/image";
+// components
 import { Seo, Topbar, Sidebar, Feed, Rightbar } from "../components";
 // styles
 import styles from "../styles/Profile.module.css";
